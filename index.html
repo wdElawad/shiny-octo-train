@@ -51,6 +51,48 @@
         .placeholder-buttons a:hover {
             background-color: #555;
         }
+        section {
+            padding: 50px 20px;
+        }
+        .articles {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: right;
+        }
+        .article {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #128C7E;
+        }
         footer {
             margin-top: 50px;
             padding: 20px;
@@ -70,9 +112,37 @@
         <div class="placeholder-buttons">
             <a href="#" target="_blank">لينكدإن</a>
             <a href="#" target="_blank">إنستقرام</a>
-            <a href="#" target="_blank">إيميل</a>
+            <a href="mailto:Elawadamjed@gmail.com" target="_blank">إيميل</a>
         </div>
     </header>
+
+    <section>
+        <h2>مقالات</h2>
+        <div class="articles">
+            <div class="article">
+                <h3>مقالة 1: أساسيات التسويق الرقمي</h3>
+                <p>تعرف على أهم أساسيات التسويق الرقمي وكيفية استخدام الأدوات الصحيحة للوصول إلى العملاء وزيادة المبيعات.</p>
+            </div>
+            <div class="article">
+                <h3>مقالة 2: استراتيجيات نمو الأعمال عبر الإنترنت</h3>
+                <p>اكتشف كيفية تطوير استراتيجيات فعّالة لنمو الأعمال التجارية عبر الإنترنت باستخدام تقنيات التسويق الرقمي الحديثة.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>تواصل معي</h2>
+        <form action="mailto:Elawadamjed@gmail.com" method="post" enctype="text/plain">
+            <label>الاسم:</label>
+            <input type="text" name="name" required>
+            <label>البريد الإلكتروني:</label>
+            <input type="email" name="email" required>
+            <label>الرسالة:</label>
+            <textarea name="message" rows="5" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
     <footer>
         &copy; 2025 أمجد العوض. جميع الحقوق محفوظة.
     </footer>
